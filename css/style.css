@@ -1,0 +1,122 @@
+/**********************************************
+*** GENERAL
+**********************************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    background-image: url(back2.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: Lato;
+    font-weight: 300;
+    position: relative;
+    height: 100vh;
+    color: #555;
+}
+
+.wrapper {
+    width: 60%;
+    /* height: 70%; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to top left, #448d76 0%, #7fbd32 76%);
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    box-shadow: 15px 15px 15px black;
+}
+
+@media screen and (max-width: 992px){
+    .wrapper{
+        width: 70%;
+        /* height: 90% */
+    }
+}
+
+
+/*            test - fonts
+=========================================*/
+#zone, #main, #weather {
+    color: #F3F7D4;
+    font-family: 'Oleo Script', cursive;
+    display: block;
+}
+
+#app {
+    font-family: 'Oleo Script', cursive;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+
+#opt{
+    font-family: 'Bungee', cursive;
+    font-weight: lighter;
+    text-align: center;
+    margin-bottom: 180px;
+    font-size: 24px;
+    color: #F3F7D4;
+}
+
+.glyphicon {
+    font-size: 20px;
+}
+
+
+/*             position - borders
+=========================================*/
+.right{
+    display: table;    
+}
+
+.wrap {
+    display: table-cell;
+    vertical-align: middle;
+    background-image: url(../images/start.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.left {
+    padding: 20px;
+}
+
+.col-md-4 p{
+    border-radius: 4px;
+    border: #F3F7D4 solid 1px;
+}
+
+.choice p:hover, .get p:hover{
+    color: #448D76;
+    background-color: #F3F7D4;
+    transition: .5s;
+}
+
+
+  @media screen and (min-width: 768px){
+    .row {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display:         flex;
+      }
+      .row > [class*='col-'] {
+           display: flex;
+           flex-direction: column;
+      }
+}
