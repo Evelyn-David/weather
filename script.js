@@ -67,7 +67,7 @@ let show = document.getElementById('show').addEventListener('click', function(){
         alert("Please pick a choice!");
     }else{
         //update UI with API data!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        // weather(api_id);
+        weather(api_id);
     }
 });
 
