@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Current Weather</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <div class="wrapper clearfix">
+        
+        
+        <div class="row">
+            <div class="col-sm-6 col-xs-12">
+
+                <!-- title -->
+                <p id="app" class="left">Weather App</p>
+
+
+                <!-- options B, CT, IS, MS, SM, DJ, AR, CP-->
+                <div id="opt">
+                    <div class="col-md-4 col-xs-6 choice" id="b">
+                        <p>B</p>
+                    </div>
+                    <div class="col-md-4 col-xs-6 choice" id="ct">
+                        <p>CT</p>
+                    </div>
+                    <div class="col-md-4 col-xs-6 choice" id="is">
+                        <p>IS</p>
+                    </div>
+                    <div class="col-md-4 col-xs-6 choice" id="ms">
+                        <p>MS</p>
+                    </div>
+                    <div class="col-md-4 col-xs-6 choice" id="sm">
+                        <p>SM</p>
+                    </div>
+                    <div class="col-md-4 col-xs-6 choice" id="dj">
+                        <p>DJ</p>
+                    </div>
+                    <div class="col-md-4 col-xs-6 choice" id="ar">
+                        <p>AR</p>
+                    </div>
+                    <div class="col-md-4 col-xs-6 choice" id="cp">
+                        <p>CP</p>
+                    </div>
+
+                    <!-- selection -->
+                    <div class="col-md-12 col-xs-12 select">
+                        <h3>Selection: <span id="selection"></span></h3>
+                    </div>
+                    
+                    <!-- Get -->
+                    <div class="col-md-12 col-xs-12 get" id="show">
+                        <p>Get <span class="glyphicon glyphicon-cloud-download"></span></p>
+                    </div>
+                </div>
+
+                <!-- display location values-->
+                <div id="zone"  class="left">
+                    <div class="location">            
+                        <h3>Location: <span id="city"></span></h3>
+                    </div>
+
+                    <div class="location">            
+                        <h3>Sunset: <span id="sunset"></span></h3>
+                    </div>
+                </div>
+
+                <!-- display main values -->
+                <div id="main"  class="left"> 
+                    <div class="values">            
+                        <h3>Humidity: <span id="umid"></span></h3>
+                    </div>
+
+                    <div class="values">            
+                        <h3>Pressure: <span id="pres"></span></h3>
+                    </div>
+                        
+                    <div class="values">            
+                        <h3>Temperature: <span id="temp"></span></h3>
+                    </div>
+                </div>
+
+            </div><!-- end first column -->
+
+            <div class="col-sm-6 col-xs-12 right">
+                <div class="wrap" id="bg"> <!-- background -->
+                    <div id="weather"> <!-- display Weather -->
+                        <div class="vremea">          
+                            <h2 id="title"></h2>
+                        </div>
+
+                        <div class="vremea">            
+                            <img src="" alt="" id="icon">
+                        </div>
+                            
+                        <div class="vremea">            
+                            <h2 id="description"></h2>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- end second column -->
+
+        </div>
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
