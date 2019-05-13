@@ -17,6 +17,7 @@ function weather(cityID){
 
 // 2. add event listener on choice classes
 window.onload = function() {
+    let s =document.getElementById('selection');
     let b = document.getElementById('b');
     let ct = document.getElementById('ct');
     let is = document.getElementById('is');
@@ -28,35 +29,43 @@ window.onload = function() {
 
     b.addEventListener('click', function(){
         api_id = 683506;
+        s.innerHTML = "București";
         console.log(api_id);
     });
     ct.addEventListener('click', function(){
         api_id = 680962; 
         console.log(api_id);
+        s.innerHTML = "Constanța";
     });
     is.addEventListener('click', function(){
         api_id = 675810; 
         console.log(api_id);
+        s.innerHTML = "Iași";
     });
     ms.addEventListener('click', function(){
         api_id = 665004; 
         console.log(api_id);
+        s.innerHTML = "Mureș";
     });
     sm.addEventListener('click', function(){
         api_id = 667872; 
         console.log(api_id);
+        s.innerHTML = "Satu Mare";
     });
     dj.addEventListener('click', function(){
         api_id = 679134; 
         console.log(api_id);
+        s.innerHTML = "Dolj";
     });
     ar.addEventListener('click', function(){
         api_id = 686254; 
         console.log(api_id);
+        s.innerHTML = "Arad";
     });
     cp.addEventListener('click', function(){
         api_id = 681624; 
         console.log(api_id);
+        s.innerHTML = "Ciprian Porumbescu";
     });
 }
 
@@ -66,7 +75,7 @@ let show = document.getElementById('show').addEventListener('click', function(){
     if(!api_id){
         alert("Please pick a choice!");
     }else{
-        //update UI with API data!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        //update UI with API data!!
         weather(api_id);
     }
 });
